@@ -7,12 +7,14 @@ import { Biltil } from 'src/app/biltil';
   styleUrls: ['./create-exogenous.component.css'],
 })
 export class CreateExogenousComponent {
+  loading: boolean = false;
   title: string = '';
   url: string = '';
   created!: Biltil;
   constructor(private biltilService: BiltilService) {}
   create() {
     if (!(this.title.length > 0 && this.title.length > 0)) return;
+    this.loading = !this.loading;
     this.biltilService
       .createBiltil({ title: this.title, url: this.url })
       .subscribe((biltil) => {
@@ -20,6 +22,7 @@ export class CreateExogenousComponent {
         this.created = biltil;
         this.title = '';
         this.url = '';
+        this.loading = !this.loading;
       });
   }
 }

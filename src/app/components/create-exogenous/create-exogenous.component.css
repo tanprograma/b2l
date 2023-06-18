@@ -1,0 +1,10 @@
+.loader {
+  position: absolute;
+  height: 100%;
+  background-color: rgba(207, 202, 202, 0.3);
+  z-index: 1;
+}
+.submit {
+  background-color: rgb(63, 60, 60);
+  color: white;
+}

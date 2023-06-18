@@ -12,6 +12,7 @@ import {
 export class AddBiltilComponent {
   faArrowLeft = faArrowLeft;
   faAngleRight = faAngleRight;
+  loading: boolean = false;
   faHouse = faHouse;
   view: any = {
     endogenous: false,
