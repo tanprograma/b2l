@@ -1,0 +1,16 @@
+<div class="card">
+  <div class="card__title">
+    <h2 class="post-title">{{ resource.title }}</h2>
+  </div>
+  <div class="card__date">
+    <p>uploaded on {{ getDateString(resource.create_date) }}</p>
+  </div>
+  <div class="card__visit">
+    <a [href]="resource.url">
+      <button class="view">
+        <fa-icon [icon]="faLink"></fa-icon>
+        visit site
+      </button>
+    </a>
+  </div>
+</div>

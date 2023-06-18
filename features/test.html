@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./features.mjs"></script>
+    <link rel="stylesheet" href="./features.css" />
+    <title>Test Document</title>
+  </head>
+  <body>
+    <!-- <div class="file">
+      <label for="input">select file</label>
+      <input id="input" type="file" />
+      <button id="parse">PARSE</button>
+    </div>
+    <div class="outputs">
+      <div class="text"></div>
+      <div class="other"></div>
+    </div>
+
+    <script>
+      const input = document.querySelector("#input");
+      const textbox = document.querySelector(".text");
+      const otherbox = document.querySelector(".other");
+      const parse = document.querySelector("#parse");
+      parse.addEventListener("click", () => {
+        const reader = new FileReader();
+        const file = input.files[0];
+        readAsText(file);
+      });
+      function readAsText(file) {
+        const reader = new FileReader();
+        reader.readAsArrayBuffer(file);
+        reader.onload = (e) => {
+          const ab = e.target.result;
+
+          const str = bufferToString(ab);
+        };
+      }
+      function bufferToString(b) {
+        const str = new Uint8Array(b);
+        console.log(str);
+        readAsString(b);
+        return str;
+      }
+      function toBlob(b) {
+        return new Blob([b], { type: "" });
+      }
+      function readAsString(blob) {
+        const reader = new FileReader();
+        reader.readAsDataURL(blob);
+        reader.onload = (e) => {
+          console.log({ url: e.target.result });
+        };
+      }
+    </script> -->
+    <div class="blog">
+      <div class="header">
+        <h1>kija blog</h1>
+      </div>
+      <div class="body">
+        <span class="ltmark">&ldquo;</span
+        ><span class="quote"
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta iusto
+          facilis in impedit doloribus animi doloremque magnam rem corporis
+          ducimus quas maiores et eligendi autem quia vero incidunt laudantium
+          consequuntur delectus iure voluptate, laboriosam repellendus esse!
+          Facilis enim, voluptatem inventore quia excepturi nemo dolorum quod
+          culpa ipsum doloribus ullam consequuntur.</span
+        >
+        <span class="rtmark">&rdquo;</span>
+      </div>
+      <div class="footer">kija@gmail.com</div>
+    </div>
+  </body>
+</html>

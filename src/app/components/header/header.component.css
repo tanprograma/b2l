@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 100%;
+  align-items: center;
+}
+.menu {
+  flex: 0 1 10%;
+  height: 90%;
+}
+.title {
+  flex: 0 1 90%;
+  height: 90%;
+}
+
+h1 {
+  text-align: center;
+}
+.title h1 {
+  font-style: italic;
+}

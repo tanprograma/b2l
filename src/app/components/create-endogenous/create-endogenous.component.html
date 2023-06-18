@@ -1,0 +1,14 @@
+<div class="formgroup">
+  <label for="title">post title</label>
+  <input id="title" name="title" type="text" [(ngModel)]="title" />
+</div>
+<div class="formgroup">
+  <label for="url">post link</label>
+  <input id="url" name="url" type="text" [(ngModel)]="url" />
+</div>
+<div class="formgroup">
+  <button class="submit">CREATE BILTIL</button>
+</div>
+<div class="created">
+  <p>item created. <a [href]="created.url">click to visit</a></p>
+</div>

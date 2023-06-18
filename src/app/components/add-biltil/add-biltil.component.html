@@ -1,0 +1,32 @@
+<div class="endogenous" *ngIf="view.exogenous">
+  <div class="header">
+    <h1>BILTIL</h1>
+  </div>
+  <div class="back">
+    <button class="back__button" (click)="setView()">
+      <fa-icon [icon]="faAngleRight"></fa-icon>create post instead
+    </button>
+    <button class="homehref" (click)="setView()">
+      <a routerLink="/home"><fa-icon [icon]="faHouse"></fa-icon></a>
+    </button>
+  </div>
+  <div class="form">
+    <app-create-exogenous></app-create-exogenous>
+  </div>
+</div>
+<div class="endogenous" *ngIf="view.endogenous">
+  <div class="header">
+    <h1>BILTIL</h1>
+  </div>
+  <div class="back">
+    <button class="back__button" (click)="setView()">
+      <fa-icon [icon]="faArrowLeft"></fa-icon>
+    </button>
+    <button class="homehref" (click)="setView()">
+      <a routerLink="/home"><fa-icon [icon]="faHouse"></fa-icon></a>
+    </button>
+  </div>
+  <div class="form">
+    <app-create-endogenous></app-create-endogenous>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+.exogenous,
+.endogenous {
+  height: 100%;
+}
+
+.back {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+.button__button {
+  display: block;
+  flex: 0 0 90%;
+}
+.homehref {
+  display: block;
+  flex: 0 0 10%;
+}

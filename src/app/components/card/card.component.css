@@ -1,0 +1,35 @@
+.card {
+  min-height: 20vh;
+  background-color: rgb(115, 115, 115);
+  color: rgb(119, 235, 237);
+  margin: 2px auto;
+  width: 90%;
+  border-radius: 5px;
+}
+.card:hover {
+  box-shadow: 0 0 2px 5px rgb(220, 219, 219);
+}
+.card div {
+  margin: 2px 4px;
+}
+a {
+  display: block;
+  text-decoration: none;
+  margin: 5px auto;
+  width: 70%;
+  height: 2rem;
+}
+.view {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: 0px;
+}
+.card__title {
+  text-transform: capitalize;
+}
+.post-title {
+  font-weight: 100;
+  font-size: 1.5rem;
+}

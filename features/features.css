@@ -1,0 +1,54 @@
+/* .file {
+  width: 50%;
+  height: 20vh;
+  margin: 2rem auto;
+  border: 1px solid black;
+}
+label,
+input,
+button {
+  display: block;
+  height: 2rem;
+  width: 90%;
+  margin: 2px auto;
+}
+.outputs {
+  display: flex;
+  justify-content: space-evenly;
+}
+.text,
+.other {
+  flex: 0 0 45%;
+  min-height: 30vh;
+  border: 1px solid black;
+} */
+@media (max-width: 400px) {
+  .blog {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1fr 8fr 1fr;
+
+    grid-template-areas:
+      "header"
+      "body"
+      "footer";
+  }
+  .header {
+    grid-area: header;
+    background-color: green;
+  }
+}
+
+.quote {
+  display: block;
+}
+.rtmark {
+  position: relative;
+  right: 0;
+  display: inline-block;
+}
+.ltmark {
+  position: relative;
+  left: 0;
+  display: inline-block;
+}
